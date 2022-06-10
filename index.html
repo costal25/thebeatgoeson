@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home | The Beat Goes On</title>
+<!--favicon-->
+<link rel="icon" type="image/x-icon" href="img/logo1.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--CSS-->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<!--JS-->
+<script src="index.js"></script>
+</head>
+<body>
+ 
+<!-- nav -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="index.html" class="w3-bar-item w3-button">The <b>Beat</b> Goes On</a>
+    <!-- header links -->
+    <div class="w3-right w3-hide-small">
+      <a href="dw.html" class="w3-bar-item w3-button">DW</a>
+      <a href="pearl.html" class="w3-bar-item w3-button">Pearl</a>
+      <a href="roland.html" class="w3-bar-item w3-button">Roland</a>
+      <a href="tama.html" class="w3-bar-item w3-button">Tama</a>
+    </div>
+  </div>
+</div>
+ 
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+  <img class="w3-image" src="img/headpic2.jpg" alt="Drums" width="1500" height="800">
+  <div class="w3-display-middle w3-margin-top w3-center">
+    <img src="img/logo2.png">
+  </div>
+</header>
+ 
+<!-- Page content -->
+<div class="w3-content w3-padding" style="max-width:1564px">
+ 
+  <!-- Project Section -->
+  <div class="w3-container w3-padding-32" id="projects">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">In-Stock Drumkits</h3>
+  </div>
+
+ <!--link to dw page-->
+  <div class="w3-row-padding">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">DW Collector's Series</div>
+        <a href="dw.html"><img src="img/dw.jpg" alt="DW" style="width:100%"></a> 
+      </div>
+    </div>
+
+    <!--link to pearl page-->
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Pearl Masters</div>
+        <a href="pearl.html"><img src="img/pearl.jpg" alt="Pearl" style="width:100%"></a> 
+      </div>
+    </div>
+
+    <!--link to roland page-->
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Roland TD-30K V-Pro Series</div>
+        <a href="roland.html"><img src="img/roland.jpg" alt="Roland" style="width:100%"></a> 
+      </div>
+    </div>
+
+    <!--link to tama page-->
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Tama Imperialstar</div>
+        <a href="tama.html"><img src="img/tama.jpg" alt="Tama" style="width:100%"></a> 
+      </div>
+    </div>
+
+  </div>
+ 
+  <!-- about -->
+  <div class="w3-container w3-padding-32" id="about">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h3>
+    <p><b>The Beat Goes On</b> is an online music store focused solely on new and used drumkits. We sell a variety of good-quality brands that are suitible for beginners and seasoned percussionists. We offer a variety of prices to allow for our drumkits to be affordable for any drum player. Our brands range from DW all the way up to Tama. Here at <b>The Beat Goes On</b>, you'll get the best deals and prices--we'll beat any other cost of new or quality used drumkits. Our used drumkits are in near-brand-new condition. 
+    </p>
+  </div>
+
+    <!-- place order, have link to to js file -->
+
+    <button id="button" class="w3-button w3-black w3-section" type="button" onclick="showOrder()"> Place Order
+    </button>
+
+    <div class="w3-container w3-padding-32" id="order" style="display:none">
+      <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Order Online</h3>
+      <p>Fill out this form to place an order!</p>
+      <form action="/action_page.php" target="_blank">
+        <input class="w3-input w3-border" type="text" placeholder="First & last name" required name="Name">
+        <input class="w3-input w3-section w3-border" type="text" placeholder="Email address" required name="Email">
+        <input class="w3-input w3-section w3-border" type="text" placeholder="Phone #" required name="Phone">
+        <input class="w3-input w3-section w3-border" type="text" placeholder="Home address" required name="Address">
+        <input class="w3-input w3-section w3-border" type="text" placeholder="Product link" required name="Product">
+        <input class="w3-input w3-section w3-border" type="text" placeholder="Additional comments" required name="Comment">
+        <button class="w3-button w3-black w3-section" type="button" onclick="hideOrder()">
+          <i class="fa fa-paper-plane"></i> Place Order
+        </button>
+      </form>
+    </div>
+
+ 
+<!-- End page content -->
+</div>
+ 
+ 
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+  <img src="img/logo2.png" height="120px">
+</footer>
+ 
+</body>
+</html>
